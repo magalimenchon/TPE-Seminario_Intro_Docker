@@ -11,7 +11,7 @@ before do
 end
 
 get '/' do
-    "Contador: #{@redis.get("counter")}"
+    "Cuenta: #{@redis.get("counter")}"
 end
 
 get '/incrementar' do

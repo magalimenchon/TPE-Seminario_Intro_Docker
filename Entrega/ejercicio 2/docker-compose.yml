@@ -4,6 +4,8 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
+    ports:
+      - 4567:4567
     depends_on:
       - redis
   redis:
